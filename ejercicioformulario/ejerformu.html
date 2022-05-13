@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INICIAR SESIÓN</h1>
+    <form method="POST" action="recogidaejer.php">
+        <div>
+            <input required type="text" name="usuario" placeholder="Escribe tu nombre de usuario">
+        </div>
+        <div>
+            <input required type="password" name="pass" placeholder="Escribe tu contraseña">
+        </div>
+        <div>
+            <input name="Aficiones[]" type="checkbox" id="deportes" value="Deportes">
+            <label for="deportes">Deportes</label>
+        </div>
+        <div>
+            <input name="Aficiones[]" type="checkbox" id="lectura" value="Lectura">
+            <label for="lectura">Lectura</label>
+        </div>
+        <div>
+            <input name="Aficiones[]" type="checkbox" id="otros" value="Otros">
+            <label for="otros">Otros</label>
+        </div>
+        <p>Sexo</p>
+        <div>
+            <input name="sexo" type="radio" id="hombre" value="Hombre">
+            <label for="hombre">Hombre</label>
+        </div>
+        <div>
+            <input name="sexo" type="radio" id="mujer" value="Mujer">
+            <label for="mujer">Mujer</label>
+        </div>
+        <div>
+            
+        </div>
+        <button name="btnEnviar">Iniciar Sesión</button>
+    </form>
+</body>
+</html>
