@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Esta es mi super página 2</h1>
+
+    <form action="ejercicio12.php" method="POST">
+        <div>
+            <label for="nombre" name="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <p></p>
+        <div>
+            <span>Nacido en:</span>
+            <select name="ciudad" id="ciudad">
+                <option value="Sevilla">Sevilla</option>
+                <option value="Málaga">Málaga</option>            
+                <option value="Cádiz">Cádiz</option>
+                <option value="Almería">Almería</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Granada">Granada</option>
+            </select>
+        </div>
+        <p></p>
+        <div>
+            <span>Sexo:</span>
+            <input type="radio" name="genero" id="hombre" value="Hombre">
+            <label for="hombre">Hombre</label>
+    
+            <input type="radio" name="genero" id="mujer" value="Mujer">
+            <label for="mujer">Mujer</label>
+        </div>
+        <p></p>
+        <div>
+            <span>Aficiones:</span>
+            <input type="checkbox" name="Aficiones[]" id="deportes" value="Deportes">
+            <label for="deportes">Deportes</label>
+    
+            <input type="checkbox" name="Aficiones[]" id="lectura" value="Lectura">
+            <label for="deportes">Lectura</label>
+    
+            <input type="checkbox" name="Aficiones[]" id="otros" value="Otros">
+            <label for="otros">Otros</label>
+        </div>
+        <p></p>
+        <div>
+            <span>Comentarios:</span>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="3"></textarea>
+        </div>
+        <p></p>
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
+    </form>
+</body>
+</html>

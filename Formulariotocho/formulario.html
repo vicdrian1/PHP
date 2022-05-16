@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    
+    <h1>Suscripción electrónica a nuestro boletín</h1>
+    <form action="formulario.php" method="POST" id="form1">
+        
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" required>
+        </div>
+        <p></p>
+        <div>
+            <label for="correo">E-mail</label>
+            <input type="email" name="correo" id="correo" required>
+
+            <label for="pass">Contaseña</label>
+            <input type="password" name="pass" id="pass" required>
+        </div>
+
+        <p>Género</p>
+        <input type="radio" name="genero" id="hombre" value="Hombre">
+        <label for="hombre">Hombre</label>
+
+        <input type="radio" name="genero" id="mujer" value="Mujer">
+        <label for="mujer">Mujer</label>
+        
+        <p>Nivel de estudios</p>
+        <div>
+        <input type="radio" name="nivelEstudios" id="certi" value="Certificado Escolar" required>
+        <label for="certi">Certificado Escolar</label>
+        </div>
+
+        <div>
+        <input type="radio" name="nivelEstudios" id="eso" value="E.S.O.">
+        <label for="eso">Graduado en E.S.O.</label>
+        </div>
+
+        <div>
+        <input type="radio" name="nivelEstudios" id="bach" value="Bachiller - Formación Profesional">
+        <label for="bach">Bachiller - Formación Profesional</label>
+        </div>
+
+        <div>
+        <input type="radio" name="nivelEstudios" id="dip" value="Diplomado">
+        <label for="dip">Diplomado</label>
+        </div>
+
+        <div>
+        <input type="radio" name="nivelEstudios" id="lic" value="Licenciado">
+        <label for="lic">Licenciado</label>
+        </div>
+
+        <p>Interesado en los siguientes temas:</p>
+
+        <div>
+        <input type="checkbox" name="Intereses[]" id="musica" value="Música">
+        <label for="musica">Música</label>
+        </div>
+
+        <div>
+        <input type="checkbox" name="Intereses[]" id="deportes" value="Deportes">
+        <label for="deportes">Deportes</label>
+        </div>
+
+        <div>
+        <input type="checkbox" name="Intereses[]" id="cine" value="Cine">
+        <label for="cine">Cine</label>
+        </div>
+
+        <div>
+        <input type="checkbox" name="Intereses[]" id="libros" value="Libros">
+        <label for="libros">Libros</label>
+        </div>
+
+        <div>
+        <input type="checkbox" name="Intereses[]" id="ciencia" value="Ciencia">
+        <label for="ciencia">Ciencia</label>
+        </div>
+
+        <p>Día de la semana que le interesa recibirlo:</p>
+        <select name="semana" id="semana">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>            
+            <option value="Miércoles">Miercoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+        </select>
+
+        <p>Su Opinión:</p>
+        <textarea name="opinion" id="opinion" cols="100" rows="10" required></textarea>
+
+        <p></p>
+        <button name="comprobar" id="comprobar" type="submit">Comprobar el Formulario</button>
+        <button name="borrar" id="borrar" type="reset">Borrar Todo</button>
+        
+
+    </form>
+</body>
+</html>
